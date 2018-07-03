@@ -4,7 +4,19 @@
         <meta charset="utf-8">
         <title>List</title>
     </head>
+
     <body>
+    	{% for restaurants in my_list %}
+        <ol>
+            <li>
+                <h1>{{restaurants.restaurant_name}}</h1>
+            </li>
+            <li>
+            	<h1>{{restaurants.food_type}}</h1>
+            </li>
+           
+        </ol><br>
+    {% endfor %}
 
     </body>
 </html>
